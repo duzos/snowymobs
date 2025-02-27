@@ -1,6 +1,9 @@
 package dev.duzo.snowmob;
 
 import com.mojang.logging.LogUtils;
+import dev.duzo.snowmob.api.SnowData;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -9,6 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.DataPackRegistryEvent;
 import org.slf4j.Logger;
 
 @Mod(SnowmobMod.MODID)
@@ -20,6 +24,10 @@ public class SnowmobMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		MinecraftForge.EVENT_BUS.register(this);
+
+		bus.addListener((DataPackRegistryEvent.NewRegistry event) -> {
+			event.dataPackRegistry(ResourceKey.createRegistryKey(new ResourceLocation(MODID, "snow_data")), SnowData.CODEC);
+		});
 	}
 
 	private void commonSetup(final FMLCommonSetupEvent event) {
