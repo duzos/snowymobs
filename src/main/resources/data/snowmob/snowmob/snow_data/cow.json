@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:cow",
+  "textures": [
+    "snowmob:textures/snowy/cow1.png",
+    "snowmob:textures/snowy/cow2.png"
+  ]
+}

@@ -5,8 +5,11 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "snowmob.refmap.json",
   "mixins": [
+    "ItemMixin",
+    "LivingEntityMixin"
   ],
   "client": [
+    "client.LivingEntityRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

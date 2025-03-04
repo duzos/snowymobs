@@ -2,8 +2,6 @@ package dev.duzo.snowmob;
 
 import com.mojang.logging.LogUtils;
 import dev.duzo.snowmob.api.SnowData;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,7 +24,7 @@ public class SnowmobMod {
 		MinecraftForge.EVENT_BUS.register(this);
 
 		bus.addListener((DataPackRegistryEvent.NewRegistry event) -> {
-			event.dataPackRegistry(ResourceKey.createRegistryKey(new ResourceLocation(MODID, "snow_data")), SnowData.CODEC);
+			event.dataPackRegistry(SnowData.REGISTRY_KEY, SnowData.CODEC);
 		});
 	}
 
