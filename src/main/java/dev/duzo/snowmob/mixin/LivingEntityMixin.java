@@ -5,6 +5,7 @@ import dev.duzo.snowmob.api.SnowData;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.LivingEntity;
 import org.spongepowered.asm.mixin.Mixin;
@@ -48,5 +49,23 @@ public class LivingEntityMixin implements SnowCollecting {
 		((LivingEntity) (Object) this).getEntityData().set(SNOW_LEVEL, Mth.clamp(level, 0, getMaxSnow()));
 
 		return getSnowLevel() == level;
+	}
+
+	@Inject(method = "baseTick", at = @At("TAIL"))
+	public void snowmob$baseTick(CallbackInfo ci) {
+		// return on client
+		if (((LivingEntity) (Object) this).level().isClientSide) return;
+
+		// check if in water
+		boolean submerged = ((LivingEntity) (Object) this).isInWater();
+		if (submerged) {
+			// check if the entity has snow
+			int snow = getSnowLevel();
+			if (snow > 0) {
+				// remove snow & play sound
+				clearSnow();
+				((LivingEntity) (Object) this).playSound(SoundEvents.SNOW_BREAK);
+			}
+		}
 	}
 }
