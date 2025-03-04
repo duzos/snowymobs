@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:fox",
+  "textures": [
+    "snowmob:textures/snowy/fox.png"
+  ]
+}

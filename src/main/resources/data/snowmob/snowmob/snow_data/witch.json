@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:witch",
+  "textures": [
+    "snowmob:textures/snowy/witch.png"
+  ]
+}

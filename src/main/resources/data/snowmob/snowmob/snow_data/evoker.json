@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:evoker",
+  "textures": [
+    "snowmob:textures/snowy/evoker.png"
+  ]
+}

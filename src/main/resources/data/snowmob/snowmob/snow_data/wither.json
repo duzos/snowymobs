@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:wither",
+  "textures": [
+    "snowmob:textures/snowy/wither.png"
+  ]
+}

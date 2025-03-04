@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:rabbit",
+  "textures": [
+    "snowmob:textures/snowy/rabbit.png"
+  ]
+}

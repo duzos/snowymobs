@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:frog",
+  "textures": [
+    "snowmob:textures/snowy/frog.png"
+  ]
+}

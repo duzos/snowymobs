@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:creeper",
+  "textures": [
+    "snowmob:textures/snowy/creeper.png"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:slime",
+  "textures": [
+    "snowmob:textures/snowy/slime.png"
+  ]
+}

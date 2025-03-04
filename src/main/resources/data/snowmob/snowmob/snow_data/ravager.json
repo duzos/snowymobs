@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:ravager",
+  "textures": [
+    "snowmob:textures/snowy/ravager.png"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:husk",
+  "textures": [
+    "snowmob:textures/snowy/zombie.png"
+  ]
+}

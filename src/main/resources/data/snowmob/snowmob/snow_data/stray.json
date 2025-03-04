@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:stray",
+  "textures": [
+    "snowmob:textures/snowy/skeleton.png"
+  ]
+}

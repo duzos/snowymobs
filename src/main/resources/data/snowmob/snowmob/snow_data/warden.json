@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:warden",
+  "textures": [
+    "snowmob:textures/snowy/warden.png"
+  ]
+}

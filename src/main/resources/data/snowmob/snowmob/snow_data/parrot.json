@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:parrot",
+  "textures": [
+    "snowmob:textures/snowy/parrot.png"
+  ]
+}

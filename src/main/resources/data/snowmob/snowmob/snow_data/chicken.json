@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:chicken",
+  "textures": [
+    "snowmob:textures/snowy/chicken.png"
+  ]
+}

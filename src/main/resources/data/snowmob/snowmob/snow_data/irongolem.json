@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:iron_golem",
+  "textures": [
+    "snowmob:textures/snowy/irongolem.png"
+  ]
+}

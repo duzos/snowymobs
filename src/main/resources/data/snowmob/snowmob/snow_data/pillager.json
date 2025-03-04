@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:pillager",
+  "textures": [
+    "snowmob:textures/snowy/pillager.png"
+  ]
+}

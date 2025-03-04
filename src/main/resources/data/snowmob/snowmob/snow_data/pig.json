@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:pig",
+  "textures": [
+    "snowmob:textures/snowy/pig.png"
+  ]
+}

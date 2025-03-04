@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:panda",
+  "textures": [
+    "snowmob:textures/snowy/panda.png"
+  ]
+}

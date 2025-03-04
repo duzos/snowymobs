@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:llama",
+  "textures": [
+    "snowmob:textures/snowy/llama.png"
+  ]
+}

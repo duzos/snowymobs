@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:zombie",
+  "textures": [
+    "snowmob:textures/snowy/zombie.png"
+  ]
+}

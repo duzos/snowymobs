@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:allay",
+  "textures": [
+    "snowmob:textures/snowy/allay.png"
+  ]
+}

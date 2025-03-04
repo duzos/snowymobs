@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:bee",
+  "textures": [
+    "snowmob:textures/snowy/bee.png"
+  ]
+}

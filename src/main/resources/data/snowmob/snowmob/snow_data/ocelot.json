@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:ocelot",
+  "textures": [
+    "snowmob:textures/snowy/cat.png"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:horse",
+  "textures": [
+    "snowmob:textures/snowy/horse.png"
+  ]
+}

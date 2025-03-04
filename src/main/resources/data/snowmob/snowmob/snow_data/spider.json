@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:spider",
+  "textures": [
+    "snowmob:textures/snowy/spider.png"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:wolf",
+  "textures": [
+    "snowmob:textures/snowy/wolf.png"
+  ]
+}

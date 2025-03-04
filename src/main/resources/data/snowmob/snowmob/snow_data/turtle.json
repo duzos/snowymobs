@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:turtle",
+  "textures": [
+    "snowmob:textures/snowy/big_sea_turtle.png"
+  ]
+}

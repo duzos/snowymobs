@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:cave_spider",
+  "textures": [
+    "snowmob:textures/snowy/spider.png"
+  ]
+}
