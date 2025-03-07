@@ -60,8 +60,6 @@ public abstract class LivingEntityRendererMixin<T extends LivingEntity, M extend
 		SnowData data = SnowData.get(snowmob$entityCache).orElse(null);
 		if (data == null) return alpha;
 
-		System.out.println(data.alpha(snowmob$entityCache));
-
 		return data.alpha(snowmob$entityCache); // @todo doesnt work properly
 	}
 }

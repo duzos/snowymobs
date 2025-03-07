@@ -76,8 +76,10 @@ public record SnowData(EntityType<?> type, List<ResourceLocation> textures, int 
 			throw new IllegalStateException("Entity type does not match snow data type");
 		}
 
-		int level = ((SnowCollecting) entity).getSnowLevel() - 1;
+		int level = ((SnowCollecting) entity).getSnowLevel();
 		if (level <= 0) return Optional.empty();
+		if (textures.isEmpty()) return Optional.empty();
+		if (textures.size() == 1) return Optional.of(textures.get(0));
 
 		int index = (maxLevel() - level) % textures.size();
 		return Optional.of(textures.get(index));
