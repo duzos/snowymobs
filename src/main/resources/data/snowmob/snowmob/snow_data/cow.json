@@ -1,6 +1,8 @@
 {
   "type": "minecraft:cow",
   "textures": [
-    "snowmob:textures/snowy/cow.png"
+    "snowmob:textures/snowy/cow.png",
+    "snowmob:textures/snowy/cow2.png",
+    "snowmob:textures/snowy/cow3.png"
   ]
 }
